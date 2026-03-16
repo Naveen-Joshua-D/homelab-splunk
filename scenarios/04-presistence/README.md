@@ -42,7 +42,7 @@ index=main
 - Tactic: Persistence
 - Technique: T1136.001 — Create Account: Local Account
 
-## Screenshot
+##Screenshot
 ![New User Creation Detection](../../screenshots/04-new-user-creation.png)
 
 ## Response Steps
