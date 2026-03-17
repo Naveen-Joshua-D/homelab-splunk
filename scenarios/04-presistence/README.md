@@ -1,4 +1,3 @@
-cat > ~/homelab-splunk/scenarios/04-new-user-creation/README.md << 'EOF'
 # Scenario 04: New User Account Creation Detection
 
 **Date:** 2026-03-17
