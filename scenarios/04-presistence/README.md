@@ -42,7 +42,7 @@ index=main
 - Technique: T1136.001 — Create Account: Local Account
 
 ##Screenshot
-![New User Creation Detection](../../screenshots/04-new-user-creation.png)
+![New User Creation Detection](../../screenshots/04-New_user_creation.png)
 
 ## Response Steps
 1. Immediately disable the newly created account

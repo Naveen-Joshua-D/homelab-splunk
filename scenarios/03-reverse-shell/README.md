@@ -37,7 +37,7 @@ index=main sourcetype=linux_audit
 - Technique: T1059.004 — Unix Shell
 
 ## Screenshot
-![Reverse Shell Detection](../../screenshots/03-Reverse_shell.png)
+![Reverse Shell Detection](../../screenshots/03-Reverse-shell.png)
 
 ## Response Steps
 1. Immediately isolate affected machine from network
