@@ -46,7 +46,7 @@ index=main sourcetype=linux_audit key=command_execution
 | table _time, host, cmd, exe, uid
 | sort -_time
 ```
-##07 - Data Exfiltration Detection (T1041)
+## 07 - Data Exfiltration Detection (T1041)
 ```splunk
 index=main sourcetype=linux_audit
 | search "scp" OR "sftp" OR "rsync"
@@ -54,7 +54,7 @@ index=main sourcetype=linux_audit
 | table _time, host, cmd, exe, uid
 | sort -_time
 ```
-##08 - Log Tampering Detection (T1070.002) 
+## 08 - Log Tampering Detection (T1070.002) 
 ```splunk
 index=main sourcetype=linux_audit key=log_tampering
 | table _time, host, comm, exe, uid
