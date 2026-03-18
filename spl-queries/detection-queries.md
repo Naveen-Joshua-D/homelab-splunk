@@ -34,30 +34,30 @@ index=main
 ```
 
 ## 05 — Sudo Abuse (T1548.003)
-`'`splunk
+```splunk
 index=main sourcetype=linux_secure sudo
 | stats count by user, host
 | sort -count
 ```
 ## 06 - Internal Reconnaissance Detection (T1082)
-'''splunk
+```splunk
 index=main sourcetype=linux_audit key=command_execution
 | rename comm AS cmd
 | table _time, host, cmd, exe, uid
 | sort -_time
-'''
+```
 ##07 - Data Exfiltration Detection (T1041)
-'''splunk
+```splunk
 index=main sourcetype=linux_audit
 | search "scp" OR "sftp" OR "rsync"
 | rename comm AS cmd
 | table _time, host, cmd, exe, uid
 | sort -_time
-'''
+```
 ##08 - Log Tampering Detection (T1070.002) 
-'''splunk
+```splunk
 index=main sourcetype=linux_audit key=log_tampering
 | table _time, host, comm, exe, uid
 | sort -_time
-''''
+```
 
